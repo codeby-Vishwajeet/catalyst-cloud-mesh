@@ -1,0 +1,5 @@
+{
+  "max_queue_capacity_mb": 4096,
+  "alert_trigger_cpu_pct": 85.0,
+  "sampling_interval_seconds": 0.5
+}
