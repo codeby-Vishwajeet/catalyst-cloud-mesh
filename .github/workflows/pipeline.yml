@@ -1,0 +1,19 @@
+name: Catalyst Cloud Mesh CI
+
+on: [push, pull_request]
+
+jobs:
+  enterprise-mesh-validation:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Fetch Matrix Code Base
+      uses: actions/checkout@v4
+
+    - name: Setup System Runtime Environment (Python 3.11)
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Execute Distributed Integration Tests
+      run: |
+        python -m unittest tests/test_mesh.py
