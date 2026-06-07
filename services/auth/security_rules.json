@@ -1,0 +1,6 @@
+{
+  "encryption_protocol": "TLSv1.3",
+  "token_expiry_seconds": 3600,
+  "max_request_limit_per_node": 10000,
+  "mfa_enforcement": true
+}
